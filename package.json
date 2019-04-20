@@ -1,0 +1,34 @@
+{
+  "name": "kcart",
+  "version": "1.0.0",
+  "description": "An ecommerce api for Turing test",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hall500/kcart.git"
+  },
+  "keywords": [
+    "ecommerce",
+    "turing",
+    "challenge",
+    "api",
+    "mysql",
+    "nodejs",
+    "node",
+    "express",
+    "jwt"
+  ],
+  "author": "Abdullah Momoh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hall500/kcart/issues"
+  },
+  "homepage": "https://github.com/hall500/kcart#readme",
+  "dependencies": {
+    "mysql": "^2.17.1"
+  }
+}
