@@ -1,12 +1,15 @@
-var mysql = require('mysql');
+const express = require('express');
+const app = express();
 
-var db = mysql.createConnection({
-    host: "localhost",
-    user: "root",
-    password: ""
+/* Routes */
+const users = require('./models/users');
+
+app.get('/', (req, res) => {
+    res.send("Welcome");
 });
 
-db.connect(function(err) {
-    if (err) throw err;
-    console.log("Connected!");
-});
+app.use('/api/users', users);
+
+const port = process.env.PORT || 5000;
+
+app.listen(port, () => console.log(`The server is running on ${port}`));
